@@ -32,29 +32,31 @@ const testimonials = [
 function Testimonials(){
     return (
          <>
-            <h3>Testimonials</h3>
-            <div className="card-container">
-                {
-                testimonials.map((testimonial) =>{
-                    return(
-                        <div key={testimonial.id}>
-                            <div className="card" >
-                                <div className='top-section'>
-                                    <h4 className="testimonee-name">{testimonial.name}</h4>
-                                    <img src={testimonial.image} alt={testimonial.name + "image"}/>
-                                    <div>
-                                        {"⭐".repeat(testimonial.reviewStars)}
+         <section className='Tesimonial-section'>
+                <h3>Testimonials</h3>
+                <div className="card-container">
+                    {
+                    testimonials.map((testimonial) =>{
+                        return(
+                            <div key={testimonial.id}>
+                                <div className="card" >
+                                    <div className='top-section'>
+                                        <h4 className="testimonee-name">{testimonial.name}</h4>
+                                        <img src={testimonial.image} alt={testimonial.name + "image"}/>
+                                        <div>
+                                            {"⭐".repeat(testimonial.reviewStars)}
+                                        </div>
+                                    </div>
+                                    <div className='bottom-section'>
+                                        <p>{testimonial.description}</p>
                                     </div>
                                 </div>
-                                <div className='bottom-section'>
-                                    <p>{testimonial.description}</p>
-                                </div>
                             </div>
-                        </div>
-                    )
-                })
-                }        
-            </div>
+                        )
+                    })
+                    }        
+                </div>
+           </section> 
          </>
     )
 }

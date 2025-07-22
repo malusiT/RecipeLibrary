@@ -1,4 +1,4 @@
-
+import './Footer.css'
 
 function Footer(){
 
@@ -6,7 +6,7 @@ function Footer(){
 
     return(
         <>
-        <section className="footer">
+        <section className="footer-section">
             <div className="social-media">
                 <div className="social-media-icon">Facebook</div>
                 <div className="social-media-icon">X</div>
